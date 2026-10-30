@@ -1,0 +1,14 @@
+{
+  "rgb": {
+    "root": "data\\EuroSAT",
+    "checked": 54000,
+    "valid": 54000,
+    "issues": []
+  },
+  "spectral": {
+    "root": "data\\EuroSATallBands",
+    "checked": 27597,
+    "valid": 27597,
+    "issues": []
+  }
+}

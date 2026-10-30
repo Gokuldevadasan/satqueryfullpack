@@ -1,0 +1,16 @@
+[
+  {
+    "model": "models\\satquery_rgb_v11.onnx",
+    "size_mb": 0.28592872619628906,
+    "average_latency_ms": 1.1994080059230328,
+    "p50_latency_ms": 1.0942500084638596,
+    "p95_latency_ms": 1.7770199920050798
+  },
+  {
+    "model": "models\\satquery_spectral.onnx",
+    "size_mb": 0.2860136032104492,
+    "average_latency_ms": 0.6518419878557324,
+    "p50_latency_ms": 0.5186001071706414,
+    "p95_latency_ms": 1.2473899172618983
+  }
+]

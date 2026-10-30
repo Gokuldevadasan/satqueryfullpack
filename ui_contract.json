@@ -1,0 +1,17 @@
+{
+  "endpoint": "POST /api/query",
+  "form-data": {
+    "query": "string",
+    "metadata_json": "optional JSON string",
+    "files": "one or two images"
+  },
+  "response": {
+    "answer": "human readable answer",
+    "task": "VQA | CAPTION | CHANGE | FUSION",
+    "confidence": 0.0,
+    "evidence": "object",
+    "visuals": "array",
+    "execution_trace": "array",
+    "latency_ms": 0
+  }
+}

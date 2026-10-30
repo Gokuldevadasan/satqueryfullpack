@@ -1,0 +1,29 @@
+# Datasets
+/data/
+
+# Python environments and caches
+.venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+
+# Node.js and npm caches
+**/node_modules/
+.npm/
+npm-cache/
+npm-debug.log*
+
+# Local environment settings
+**/.env
+**/.env.*
+!**/.env.example
+
+# Build output
+**/.next/
+**/build/
+**/dist/
+**/out/
+*.tsbuildinfo
+
+# Local development logs
+*.log

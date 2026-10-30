@@ -1,0 +1,4 @@
+# Training environment (laptop/PC)
+-r requirements_train.txt
+# API and Raspberry Pi CPU inference dependencies
+-r requirements_pi.txt

@@ -1,0 +1,6 @@
+torch
+torchvision
+onnx
+tqdm
+rasterio
+requests

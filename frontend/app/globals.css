@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; background: #000; }
+body { margin: 0; background: #000; color: #F5F5F7; font-family: "DM Serif Display", Georgia, serif; }
+button, input, textarea { font: inherit; }
+button { cursor: pointer; }
+::selection { background: rgba(10, 132, 255, .38); }
+
+.noise { background-image: radial-gradient(rgba(255,255,255,.07) .5px, transparent .5px); background-size: 5px 5px; mask-image: linear-gradient(to bottom, black, transparent 75%); opacity: .14; }
+.glass { background: linear-gradient(135deg, rgba(255,255,255,.085), rgba(255,255,255,.028)); border: 1px solid rgba(255,255,255,.11); box-shadow: 0 24px 80px rgba(0,0,0,.35); backdrop-filter: blur(18px); }
+.liquid-glass { position: relative; isolation: isolate; overflow: hidden; background: linear-gradient(135deg, rgba(255,255,255,.105) 0%, rgba(255,255,255,.045) 42%, rgba(10,132,255,.035) 100%); border: 1px solid rgba(255,255,255,.12); box-shadow: inset 0 1px 0 rgba(255,255,255,.13), 0 20px 80px rgba(0,0,0,.42); backdrop-filter: blur(24px) saturate(145%); -webkit-backdrop-filter: blur(24px) saturate(145%); }
+.liquid-glass::before { position: absolute; z-index: -1; top: -65%; left: -18%; width: 70%; height: 150%; content: ""; opacity: .38; background: radial-gradient(ellipse, rgba(255,255,255,.18), transparent 68%); transform: rotate(18deg); pointer-events: none; }
+.liquid-glass::after { position: absolute; z-index: -1; right: -15%; bottom: -80%; width: 60%; height: 150%; content: ""; opacity: .32; background: radial-gradient(ellipse, rgba(10,132,255,.17), transparent 66%); pointer-events: none; }
+.focus-ring:focus-visible { outline: 2px solid #0A84FF; outline-offset: 3px; }
+.scrollbar-thin::-webkit-scrollbar { width: 5px; }
+.scrollbar-thin::-webkit-scrollbar-thumb { background: #36363b; border-radius: 8px; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; } }

@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+python-multipart
+numpy
+pillow
+opencv-python-headless
+rasterio
+pyproj
+onnxruntime
+tqdm
+requests
